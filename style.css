@@ -1,0 +1,373 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #0f0f11;
+    padding: 20px;
+}
+
+/* Navbar uslubi */
+.navbar {
+    width: 100%;
+    min-height: 70px;
+    background-color: #191717;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.navbar h2 {
+    font-size: 24px;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    align-items: center;
+}
+
+/* Navbar ichidagi tugmalar */
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 12px;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.2s ease;
+}
+
+.btn1 { background-color: darkmagenta; }
+.btn2 { background-color: #1ed12c; }
+.btn3 { background-color: #cc3232; }
+
+nav ul li a:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+/* Nav tugmalari bosilganda (:active) */
+nav ul li a:active {
+    transform: translateY(1px) scale(0.96);
+    opacity: 1;
+}
+
+/* Hero Qismi */
+.ota {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero-img img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+}
+
+.hero-img img:hover {
+    transform: rotate(1.9deg) scale(1.02);
+}
+
+.hero-img img:active {
+    transform: scale(0.98);
+}
+
+.f {
+    background-color: darkmagenta;
+    color: white;
+    padding: 25px;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.6;
+    max-width: 450px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Binafsha chiziq */
+.purple-line {
+    border: none;
+    height: 2px;
+    background-color: purple;
+    margin: 50px 0;
+}
+
+/* O'rtadagi Loyihalar tugmasi */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.projects-btn {
+    background-color: darkmagenta;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.projects-btn:hover {
+    transform: translateY(-2px) scale(1.03);
+    background-color: #8b008b;
+    box-shadow: 0 5px 15px rgba(139, 0, 139, 0.4);
+}
+
+.projects-btn:active {
+    transform: translateY(1px) scale(0.97);
+    box-shadow: 0 2px 5px rgba(139, 0, 139, 0.2);
+}
+
+/* Loyihalar konteyneri va kartalari */
+.containerproject {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgba(41, 38, 38, 0.8);
+    color: white;
+    gap: 30px;
+}
+
+.containerproject img {
+    width: 190px;
+    height: 190px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.childrn1, .children2, .children3 {
+    width: 230px;
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgba(41, 38, 38, 0.8);
+    background-color: indigo;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.childrn1:hover, .children2:hover, .children3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(75, 0, 130, 0.5);
+}
+
+/* Ichki tugmalar (an, an1, an2) */
+.an, .an1, .an2 {
+    width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background-color: darkmagenta;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.an:hover, .an1:hover, .an2:hover {
+    background-color: #9b009b;
+    opacity: 0.9;
+}
+
+.an:active, .an1:active, .an2:active {
+    transform: scale(0.92);
+    background-color: #6a006a;
+}
+
+/* Havolalar (havola, havola1, havola2) */
+.havola, .havola1, .havola2 {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Impact, sans-serif;
+    transition: opacity 0.2s ease, color 0.2s ease;
+}
+
+.havola:hover, .havola1:hover, .havola2:hover {
+    color: #e0b0ff;
+}
+
+.havola:active, .havola1:active, .havola2:active {
+    opacity: 0.7;
+}
+
+/* Mobil qurilmalar uchun */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .ota {
+        flex-direction: column;
+    }
+}
+
+/* ==================== FOOTER STYLES ==================== */
+.footer {
+    width: 100%;
+    background-color: #191717;
+    border-radius: 20px;
+    padding: 40px 25px 20px;
+    margin-top: 60px;
+    color: white;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-box {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-logo {
+    font-size: 22px;
+    color: darkmagenta;
+    margin-bottom: 15px;
+}
+
+.footer-desc {
+    color: #ccc;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-box h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: white;
+    border-bottom: 2px solid darkmagenta;
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+/* Navigatsiya linklari */
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #bbb;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: #e0b0ff;
+    transform: translateX(5px);
+}
+
+.footer-links a:active {
+    opacity: 0.7;
+    transform: translateX(2px);
+}
+
+/* Ijtimoiy tarmoq tugmalari */
+.social-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: indigo;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(75, 0, 130, 0.6);
+}
+
+.social-btn:active {
+    transform: translateY(1px) scale(0.95);
+    box-shadow: none;
+}
+
+.social-btn.telegram { background-color: #0088cc; }
+.social-btn.instagram { background-color: #e1306c; }
+.social-btn.github { background-color: #333; }
+
+/* Pastki mualliflik qismi */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #2a2828;
+    color: #888;
+    font-size: 13px;
+}
+
+/* Mobil moslashuvchanlik (Responsive) */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-box h4 {
+        border-bottom: none;
+    }
+
+    .footer-links a:hover {
+        transform: translateY(-2px);
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
